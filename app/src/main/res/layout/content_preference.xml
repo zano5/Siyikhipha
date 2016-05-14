@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="macmain.co.za.siyikhipha.PreferenceActivity"
+    tools:showIn="@layout/activity_preference"
+    card_view:cardCornerRadius="@dimen/cardCornerRadius"
+    card_view:cardElevation="@dimen/cardElevation"
+    android:background="@color/colorBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorBackground">
+    <android.support.v7.widget.CardView
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        card_view:cardCornerRadius="@dimen/cardCornerRadius"
+        card_view:cardElevation="@dimen/cardElevation"
+        android:layout_marginTop="20dp"
+        android:id="@+id/cvInformation">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Personal Image"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_gravity="center"/>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:id="@+id/cvFeedBack"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                card_view:cardElevation="@dimen/cardElevation"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send FeedBack"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_gravity="center"
+                    />
+
+            </android.support.v7.widget.CardView>
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/first"
+                    android:layout_gravity="center"/>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

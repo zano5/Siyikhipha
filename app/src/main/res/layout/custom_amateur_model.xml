@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+
+    android="@+id/cvAmateurModel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="@dimen/cardCornerRadius"
+    card_view:cardElevation="@dimen/cardElevation">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/tvCustomAmateurModelName"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:id="@+id/linearLayout">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/ivCustomAmateurModel"
+                android:src="@drawable/model"
+               />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/ivCirclePromo"
+                android:src="@drawable/hunters"
+
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearLayout"
+           >
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/customRatingBarModel" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="view"
+                android:id="@+id/tvAmateurModelViews"
+                android:layout_below="@+id/customRatingBarModel"
+
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="like"
+                android:id="@+id/tvAmateurModelLikes"
+
+                android:layout_alignTop="@+id/tvAmateurModelViews"
+                android:layout_centerHorizontal="true" />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+</android.support.v7.widget.CardView>

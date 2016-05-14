@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="macmain.co.za.siyikhipha.UploadCulturalActivity"
+    tools:showIn="@layout/activity_upload_cultural"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/title_cultural_item_label"
+        android:ems="10"
+        android:id="@+id/etUploadItemName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/city_cultural_item_label"
+        android:ems="10"
+        android:id="@+id/etUploadItemCity"
+        android:layout_below="@+id/etUploadItemName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/town_cultural_item_label"
+        android:ems="10"
+        android:id="@+id/etUploadItemTown"
+        android:layout_below="@+id/etUploadItemCity"
+        android:layout_alignRight="@+id/etUploadItemCity"
+        android:layout_alignEnd="@+id/etUploadItemCity"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/area_cultural_item_label"
+        android:ems="10"
+        android:id="@+id/etUploadItemArea"
+        android:layout_below="@+id/etUploadItemTown"
+        android:layout_alignRight="@+id/etUploadItemTown"
+        android:layout_alignEnd="@+id/etUploadItemTown"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/contact_cultural_item_label"
+        android:ems="10"
+        android:id="@+id/etUploadItemContact"
+        android:layout_below="@+id/etUploadItemArea"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/price_cultural_item_label"
+        android:ems="10"
+        android:id="@+id/etUploadItemPrice"
+        android:layout_below="@+id/etUploadItemContact"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click to image to upload image"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/ivUploadItemImage"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/upload"
+        android:layout_marginTop="5dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUploadCulturalItem"
+        android:text="@string/upload_cultural_item_label"
+        android:enabled="false" />
+
+    </LinearLayout>
+</ScrollView>

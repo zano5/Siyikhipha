@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+   android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="macmain.co.za.siyikhipha.AmateurActivity"
+    tools:showIn="@layout/activity_amateur"
+    android:background="@color/colorBackground">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/username_editText_label"
+        android:ems="10"
+        android:id="@+id/etAmateurName"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/amateur_image_name_textView_label"
+        android:ems="10"
+        android:id="@+id/etAmateurImageName" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_textView_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/ivAmateur"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/uploadfemale"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAmateurConfirm"
+        android:text="@string/upload_button_label"
+        android:layout_marginTop="10dp"
+        android:enabled="false" />
+
+
+</LinearLayout>

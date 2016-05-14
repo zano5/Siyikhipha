@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:id="@+id/cdEvent"
+    card_view:cardCornerRadius="@dimen/cardCornerRadius"
+    card_view:cardElevation="@dimen/cardElevation"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bushfire"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="30dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/tvTitle"
+           />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="80dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:id="@+id/ivEvent"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height= "wrap_content"
+                    android:text="Tuesday 23 Decemeber 2015"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+                    android:id="@+id/tvDate"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height= "wrap_content"
+                    android:text="Rugby Park Centurim"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+                    android:id="@+id/tvArea"
+                    android:layout_marginTop="10dp"/>
+
+
+                <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                    android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvStart"
+                    android:text="Start:8 A.M"
+                    android:layout_weight="1"
+                    android:textStyle="italic"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvEnd"
+                    android:text="End: 6 P.M"
+                    android:layout_weight="1"
+                    android:textStyle="italic"
+                    android:textSize="17sp"/>
+
+
+        </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvNormalPrice"
+                        android:text="Price: R120"
+                        android:layout_weight="1"
+                        android:textStyle="italic"
+                        android:textSize="17sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvVipPrice"
+                        android:text="Vip: R500"
+                        android:layout_weight="1"
+                        android:textStyle="italic"
+                        android:textSize="17sp"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

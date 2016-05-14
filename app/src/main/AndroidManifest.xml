@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="macmain.co.za.siyikhipha">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EventActivity"
+            android:label="@string/title_activity_event"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ArtistActivity"
+            android:label="@string/title_activity_artist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MerchandiseActivity"
+            android:label="@string/title_activity_merchandise"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TicketActivity"
+            android:label="@string/title_activity_ticket"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ModellingActivity"
+            android:label="@string/title_activity_modelling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AmateurActivity"
+            android:label="@string/title_activity_amateur"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ModelRatingActivity"
+            android:label="@string/title_activity_model_rating"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AmateurViewActivity"
+            android:label="@string/title_activity_amateur_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UploadAudioActivity"
+            android:label="@string/title_activity_upload_audio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AudioActivity"
+            android:label="@string/title_activity_audio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EventScheduleActivity"
+            android:label="@string/title_activity_event_schedule"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UploadCulturalActivity"
+            android:label="@string/title_activity_upload_cultural"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UploadClotheringActivity"
+            android:label="@string/title_activity_upload_clothering"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ClotheringActivity"
+            android:label="@string/title_activity_clothering"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UploadEventActivity"
+            android:label="@string/title_activity_upload_event"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OpenEventActivity"
+            android:label="@string/title_activity_open_event"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OpenEventViewActivity"
+            android:label="@string/title_activity_open_event_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PromotionalActivity"
+            android:label="@string/title_activity_promotional"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LineUpActivity"
+            android:label="@string/title_activity_line_up"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="@string/title_activity_splash_screen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PreferenceActivity"
+            android:label="@string/title_activity_preference"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VideoUploadActivity"
+            android:label="@string/title_activity_video_upload"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ImageSelectionActivity"
+            android:label="@string/title_activity_image_selection"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

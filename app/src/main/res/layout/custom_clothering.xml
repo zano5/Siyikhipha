@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cdClothering">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chance Clothering"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:id="@+id/tvCustomLine"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:id = "@+id/ivCustomClothering"
+
+        android:layout_marginTop="5dp"
+       />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Producer"
+            android:id="@+id/tvCustomProducer"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Contact"
+            android:id="@+id/tvCustomContact"
+            android:layout_alignTop="@+id/tvCustomProducer"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:inputType="numberDecimal"
+            android:text="200"
+            android:id="@+id/tvCustomPrice"
+            android:layout_below="@+id/tvCustomContact"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

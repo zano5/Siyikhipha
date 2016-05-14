@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="@dimen/cardCornerRadius"
+    card_view:cardElevation="@dimen/cardElevation"
+    android:id="@+id/cdMerchandise"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMerchandiseTitle"
+                android:layout_gravity="center"
+                android:text="Wooden Bird"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/ivMerchandise"
+              />
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="City: Mbabane"
+                 android:id="@+id/tvMerchandiseCity"
+                 android:layout_alignParentTop="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_marginLeft="55dp"
+                 android:layout_marginStart="55dp" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Town: Manzini"
+                 android:id="@+id/tvMerchandiseTown"
+                 android:layout_alignParentTop="true"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentEnd="true"
+                 android:layout_marginRight="49dp"
+                 android:layout_marginEnd="49dp" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Area:Gables"
+                 android:id="@+id/tvMerchandiseArea"
+                 android:layout_below="@+id/tvMerchandiseCity"
+                 android:layout_alignLeft="@+id/tvMerchandiseCity"
+                 android:layout_alignStart="@+id/tvMerchandiseCity" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Price: R200.00"
+                 android:id="@+id/tvMerchandisePrice"
+                 android:layout_below="@+id/tvMerchandiseTown"
+                 android:layout_alignLeft="@+id/tvMerchandiseTown"
+                 android:layout_alignStart="@+id/tvMerchandiseTown" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Contact: +26876140998"
+                 android:id="@+id/tvMerchandiseContact"
+                 android:layout_below="@+id/tvMerchandiseArea"
+                 android:layout_alignLeft="@+id/tvMerchandiseArea"
+                 android:layout_alignStart="@+id/tvMerchandiseArea" />
+         </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

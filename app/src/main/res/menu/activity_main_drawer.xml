@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/event"
+            android:title="Events" />
+        <item
+            android:id="@+id/merchandise"
+
+            android:title="Merchandise" />
+        <item
+            android:id="@+id/artist"
+
+            android:title="Up Coming Artists" />
+
+        <item
+            android:title="Modelling"
+            android:id="@+id/model"/>
+
+
+        <item
+            android:id="@+id/music"
+            android:title="Music"
+
+           />
+
+        <item
+            android:id="@+id/swaziBrewary"
+            android:title="Swaziland Brewary"/>
+
+
+    </group>
+
+
+</menu>
